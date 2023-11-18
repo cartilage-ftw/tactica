@@ -45,7 +45,10 @@ out = mod.fit(y, pars, x=x)
 
 #print(dir(out.params))
 print(out.params)
+print('----')
 print(type(out.params))
+print('****')
+print(out.fit_report())
 #print(out.fit_report(min_correl=0.5))
 
 fig, axes = plt.subplots(1, 2, figsize=(12.8, 4.8))
